@@ -11,19 +11,19 @@ int main()
         printf("\nDigite o numero: ");
         scanf("%d", &vet[i]);
             //estrutura de condiçao if
-            if (vet[i]%2 != 0)
+            if (vet[i]%2 != 0) //caso o numero dividido por 2 seja 0, o numero é par
                 {
                 //contador de numeros impares
-                vetimp[cont] = vet[i];
-                cont++;
+                vetimp[cont] = vet[i]; //entao como o numero é par, aqui ele irá substituir o valor informado por uma nova variavel, onde será armazenada os numeros impares
+                cont++; //o numero se tornará impar se o numero par for somado com +1
                 }
         }
-    //amostra do resultado mostrado na tela
+    //mostra a mensagem na tela
     printf("\nOs numeros impares são: ");
     //numeros impares que irao aparecer na tela
     for (i = 0; i<cont; i++)
         {
-        printf("\n%d\n", vetimp[i]);
+        printf("\n%d\n", vetimp[i]); //aqui o vetimp[i] foi somado com +1 caso o numero seja par e ja foi substituido, entao só vai mostrar numeros impares
         }
 
     return 0;
